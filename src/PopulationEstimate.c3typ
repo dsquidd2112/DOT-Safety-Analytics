@@ -1,0 +1,10 @@
+/*
+ * State population estimate from Census Bureau NST-EST series.
+ * id = "{stateFips}-{year}"
+ */
+entity type PopulationEstimate {
+  stateFips:  !string
+  year:       !int
+  population: !int
+  source:     string
+}

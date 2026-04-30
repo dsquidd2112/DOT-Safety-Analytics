@@ -1,0 +1,10 @@
+type SourceFarsAccAux mixes Source {
+  @ser(name="ST_CASE")    stCase:      string
+  @ser(name="A_POSBAC")   alcFlag:     int
+  @ser(name="A_SPCRA")    speedFlag:   int
+  @ser(name="A_DIST")     distractFlag: int
+  @ser(name="A_DROWSY")   drowsyFlag:  int
+  @ser(name="A_PED_F")    pedFlag:     int
+  @ser(name="A_WRONGWAY") wrongwayFlag: int
+  @ser(name="A_HR")       hitrunFlag:  int
+}

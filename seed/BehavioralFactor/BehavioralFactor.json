@@ -1,0 +1,11 @@
+[
+  {"id": "alcohol",             "name": "Alcohol-Impaired Driving", "behaviorId": "alcohol",             "crashField": "alcFlag",        "prdCategory": "impaired",   "description": "Crashes involving a driver or non-motorist with a positive BAC or suspected alcohol impairment."},
+  {"id": "drugs",               "name": "Drug-Impaired Driving",    "behaviorId": "drugs",               "crashField": "drugFlag",        "prdCategory": "impaired",   "description": "Crashes where a person-level drug indicator is present."},
+  {"id": "speeding",            "name": "Speeding-Related",         "behaviorId": "speeding",            "crashField": "speedFlag",       "prdCategory": "speed",      "description": "Crashes flagged A_SPCRA in FARS acc_aux — racing, exceeding limits, or speed too fast for conditions."},
+  {"id": "distracted_driving",  "name": "Distracted Driving",       "behaviorId": "distracted_driving",  "crashField": "distractFlag",    "prdCategory": "distracted", "description": "Crashes flagged A_DIST — driver inattention, cell phone use, or other distraction."},
+  {"id": "drowsy_driving",      "name": "Drowsy/Fatigued Driving",  "behaviorId": "drowsy_driving",      "crashField": "drowsyFlag",      "prdCategory": "impaired",   "description": "Crashes where drowsiness or fatigue was a contributing factor (A_DROWSY)."},
+  {"id": "seatbelt_nonuse",     "name": "Seatbelt Non-Use",         "behaviorId": "seatbelt_nonuse",     "crashField": "beltFlag",        "prdCategory": "restraint",  "description": "Crashes with at least one occupant fatality where no seatbelt was used."},
+  {"id": "pedestrian_fatality", "name": "Pedestrian Fatality",      "behaviorId": "pedestrian_fatality", "crashField": "pedFlag",         "prdCategory": "pedestrian", "description": "Crashes resulting in a pedestrian fatality (A_PED_F)."},
+  {"id": "wrong_way",           "name": "Wrong-Way Driving",        "behaviorId": "wrong_way",           "crashField": "wrongwayFlag",    "prdCategory": "speed",      "description": "Crashes involving a wrong-way driver (A_WRONGWAY)."},
+  {"id": "hit_run",             "name": "Hit-and-Run",              "behaviorId": "hit_run",             "crashField": "hitrunFlag",      "prdCategory": "speed",      "description": "Crashes where a driver fled the scene (A_HR)."}
+]

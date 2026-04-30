@@ -1,0 +1,5 @@
+type SourceVMTEstimate mixes Source {
+  @ser(name="State")      stateName:  string
+  @ser(name="Year")       year:       int
+  @ser(name="Thousands of Vehicle Miles") vmtThousands: double
+}

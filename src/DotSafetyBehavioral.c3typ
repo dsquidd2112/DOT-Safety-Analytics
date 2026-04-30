@@ -1,0 +1,7 @@
+entity type DotSafetyBehavioral {
+  getStateAnalysis:  function(stateFips: string, year: int, topN: int, month: int): native py
+  getCountyHotspots: function(stateFips: string, year: int, behaviorId: string, topN: int, month: int): native py
+  getCityHotspots:   function(stateFips: string, year: int, behaviorId: string, topN: int, month: int): native py
+  getDemographics:   function(stateFips: string, year: int, behaviorId: string, month: int): native py
+  getYoyTrend:       function(stateFips: string, behaviorId: string): native py
+}

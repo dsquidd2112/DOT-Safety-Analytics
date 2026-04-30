@@ -1,0 +1,11 @@
+/*
+ * US state or territory reference record.
+ * id = 2-digit FIPS code (e.g. "48" for Texas).
+ */
+entity type StateRef {
+  fips: !string
+  abbr: !string
+
+  getAll: function(): [StateRef] js
+  getByFips: function(fips: string): StateRef js
+}

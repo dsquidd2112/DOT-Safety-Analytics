@@ -1,0 +1,11 @@
+/*
+ * Vehicle miles traveled for a state and year.
+ * Source: FHWA Highway Statistics VM-2.
+ * id = "{stateFips}-{year}"
+ */
+entity type VMTEstimate {
+  stateFips:   !string
+  year:        !int
+  vmtMillions: !double
+  source:      string
+}

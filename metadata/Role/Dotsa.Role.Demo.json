@@ -1,0 +1,14 @@
+{
+  "id": "Dotsa.Role.Demo",
+  "name": "Dotsa.Role.Demo",
+  "permissions": [
+    "read:StateRef",
+    "read:BehavioralFactor",
+    "read:Countermeasure",
+    "read:DotSafetyBehavioral",
+    "read:DotSafetyBenchmark",
+    "read:DotSafetyEnforcement",
+    "read:DotSafetyCountermeasures",
+    "read:DotSafetyChat"
+  ]
+}

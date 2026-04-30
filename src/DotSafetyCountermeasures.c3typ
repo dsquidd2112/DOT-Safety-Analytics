@@ -1,0 +1,4 @@
+entity type DotSafetyCountermeasures {
+  getRecommendations:  function(stateFips: string, year: int, topBehaviors: [string], minEvidence: string, programType: string, month: int): native py
+  getBehaviorSummary:  function(stateFips: string, year: int, behaviorId: string): string py
+}

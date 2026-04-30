@@ -1,0 +1,13 @@
+type SourceFarsPerson mixes Source {
+  @ser(name="ST_CASE")    stCase:       string
+  @ser(name="VEH_NO")     vehNo:        int
+  @ser(name="PER_NO")     perNo:        int
+  @ser(name="STATE")      stateFips:    string
+  @ser(name="AGE")        age:          int
+  @ser(name="SEX")        sex:          int
+  @ser(name="INJ_SEV")    injSev:       int
+  @ser(name="REST_USE")   restraintUse: int
+  @ser(name="DRINKING")   drinking:     int
+  @ser(name="DRUGS")      drugs:        int
+  @ser(name="PER_TYP")    personType:   int
+}

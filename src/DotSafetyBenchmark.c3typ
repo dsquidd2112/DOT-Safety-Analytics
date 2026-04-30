@@ -1,0 +1,5 @@
+entity type DotSafetyBenchmark {
+  getAllBenchmarks:  function(year: int, month: int): native py
+  getStateBenchmark: function(stateFips: string, year: int, month: int): native py
+  getPeerComparison: function(stateFipsList: [string], year: int, month: int): native py
+}

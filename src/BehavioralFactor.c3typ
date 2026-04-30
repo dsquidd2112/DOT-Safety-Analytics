@@ -1,0 +1,12 @@
+/*
+ * Controlled vocabulary for crash behavioral contributors.
+ * Seed data drives all behavior IDs used across the app.
+ */
+entity type BehavioralFactor {
+  behaviorId:    !string
+  crashField:    !string
+  prdCategory:   string
+  description:   string
+
+  getAll: function(): [BehavioralFactor] js
+}

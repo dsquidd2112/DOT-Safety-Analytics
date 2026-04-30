@@ -1,0 +1,10 @@
+{
+  "name": "dotsa",
+  "version": "1.0.0",
+  "description": "SAFE-States: DOT Fatality & Enforcement Safety Analytics",
+  "license": "C3.ai Proprietary",
+  "c3ApiVersion": "7.x",
+  "dependencies": [
+    { "name": "ui", "version": "~7" }
+  ]
+}

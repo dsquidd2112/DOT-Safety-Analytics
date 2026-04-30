@@ -1,0 +1,8 @@
+targetModuleName,targetPageName,name,urlPath
+Dotsa,Overview,Overview,/overview
+Dotsa,Benchmark,Benchmark,/benchmark
+Dotsa,Behaviors,Behaviors,/behaviors
+Dotsa,Enforcement,Enforcement,/enforcement
+Dotsa,Countermeasures,Countermeasures,/countermeasures
+Dotsa,Chat,Ask AI,/chat
+Dotsa,Ss4a,SS4A Alignment,/ss4a

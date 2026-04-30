@@ -1,0 +1,33 @@
+/*
+ * One fatal crash event from NHTSA FARS.
+ * id = "{ST_CASE}-{year}"  (composite, unique per crash per year).
+ * Behavioral flags are normalized booleans from acc_aux / person aggregation.
+ */
+entity type FatalCrash {
+  stCase:       !string
+  stateFips:    !string
+  year:         !int
+  countyFips:   string
+  countyName:   string
+  cityCode:     string
+  cityName:     string
+  month:        int
+  dayWeek:      int
+  hour:         int
+  fatals:       int
+  latitude:     double
+  longitude:    double
+  lighting:     string
+  weather:      string
+
+  // Behavioral flags (true = behavior confirmed present)
+  alcFlag:      boolean
+  drugFlag:     boolean
+  speedFlag:    boolean
+  distractFlag: boolean
+  drowsyFlag:   boolean
+  beltFlag:     boolean
+  pedFlag:      boolean
+  wrongwayFlag: boolean
+  hitrunFlag:   boolean
+}

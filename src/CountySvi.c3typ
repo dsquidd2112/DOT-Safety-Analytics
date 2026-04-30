@@ -1,0 +1,21 @@
+/*
+ * CDC Social Vulnerability Index at county level.
+ * id = 5-digit county FIPS code.
+ */
+entity type CountySvi {
+  countyFips: !string
+  stateFips:  !string
+  countyName: string
+  stateName:  string
+  stateAbbr:  string
+  rplThemes:  double
+  rplTheme1:  double
+  rplTheme2:  double
+  rplTheme3:  double
+  rplTheme4:  double
+  epPov150:   double
+  epUnemp:    double
+  epUninsur:  double
+  epNohsdp:   double
+  epMinrty:   double
+}

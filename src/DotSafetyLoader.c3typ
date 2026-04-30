@@ -1,0 +1,7 @@
+entity type DotSafetyLoader {
+  loadFars:       function(year: int, dataPath: string): native py
+  loadPopulation: function(csvPath: string): native py
+  loadVmt:        function(csvPath: string): native py
+  loadSvi:        function(csvPath: string): native py
+  loadAll:        function(dataRoot: string): native py
+}

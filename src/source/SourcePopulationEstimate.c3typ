@@ -1,0 +1,8 @@
+type SourcePopulationEstimate mixes Source {
+  @ser(name="STATE")     stateFips: string
+  @ser(name="NAME")      stateName: string
+  @ser(name="POPESTIMATE2021") pop2021: int
+  @ser(name="POPESTIMATE2022") pop2022: int
+  @ser(name="POPESTIMATE2023") pop2023: int
+  @ser(name="POPESTIMATE2024") pop2024: int
+}

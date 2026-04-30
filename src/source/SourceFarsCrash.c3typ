@@ -1,0 +1,16 @@
+type SourceFarsCrash mixes Source {
+  @ser(name="ST_CASE")   stCase:    string
+  @ser(name="STATE")     stateFips: string
+  @ser(name="COUNTY")      countyFips:  string
+  @ser(name="COUNTYNAME") countyName:  string
+  @ser(name="CITY")        cityCode:   string
+  @ser(name="CITYNAME")   cityName:    string
+  @ser(name="MONTH")     month:     int
+  @ser(name="DAY_WEEK")  dayWeek:   int
+  @ser(name="HOUR")      hour:      int
+  @ser(name="FATALS")    fatals:    int
+  @ser(name="LATITUDE")  latitude:  double
+  @ser(name="LONGITUD")  longitude: double
+  @ser(name="LGT_COND")  lighting:  int
+  @ser(name="WEATHER")   weather:   int
+}

@@ -1,0 +1,4 @@
+entity type DotSafetyEnforcement {
+  getEnforcementWindows: function(stateFips: string, year: int, behaviorId: string, month: int, city: string): native py
+  getLocationBreakdown:  function(stateFips: string, year: int, behaviorId: string, month: int, hourFrom: int, hourTo: int, dow: int, topN: int): native py
+}

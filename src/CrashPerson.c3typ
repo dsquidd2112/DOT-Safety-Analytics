@@ -1,0 +1,18 @@
+/*
+ * One person record within a fatal crash.
+ * id = "{ST_CASE}-{VEH_NO}-{PER_NO}-{year}"
+ */
+entity type CrashPerson {
+  stCase:       !string
+  vehNo:        !int
+  perNo:        !int
+  stateFips:    !string
+  year:         !int
+  age:          int
+  sex:          string
+  injSev:       int
+  restraintUsed: boolean
+  drinking:     boolean
+  drugs:        boolean
+  personType:   string
+}

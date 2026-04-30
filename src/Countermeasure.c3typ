@@ -1,0 +1,19 @@
+/*
+ * Evidence-based countermeasure from NHTSA "Countermeasures That Work" 10th Ed.
+ * id = slug, e.g. "alcohol-sobriety-checkpoints"
+ */
+entity type Countermeasure {
+  behaviorId:        !string
+  behaviorName:      string
+  title:             !string
+  summary:           string
+  evidenceLevel:     string
+  effectivenessNote: string
+  programType:       string
+  chapter:           string
+  pageReference:     string
+  sourceDocument:    string
+  resourceUrl:       string
+
+  getByBehavior: function(behaviorId: string, minEvidence: string): [Countermeasure] js
+}

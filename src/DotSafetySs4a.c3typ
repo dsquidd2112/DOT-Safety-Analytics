@@ -1,0 +1,3 @@
+entity type DotSafetySs4a {
+  getSs4aAlignment: function(stateFips: string, year: int, month: int): native py
+}

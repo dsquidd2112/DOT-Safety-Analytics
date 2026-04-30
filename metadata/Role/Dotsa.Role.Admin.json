@@ -1,0 +1,22 @@
+{
+  "id": "Dotsa.Role.Admin",
+  "name": "Dotsa.Role.Admin",
+  "permissions": [
+    "read:FatalCrash",
+    "read:CrashPerson",
+    "read:StateRef",
+    "read:PopulationEstimate",
+    "read:VMTEstimate",
+    "read:CountySvi",
+    "read:BehavioralFactor",
+    "read:Countermeasure",
+    "read:DotSafetyBehavioral",
+    "read:DotSafetyBenchmark",
+    "read:DotSafetyEnforcement",
+    "read:DotSafetyCountermeasures",
+    "read:DotSafetyChat",
+    "execute:DotSafetyLoader",
+    "read:AuditLog"
+  ],
+  "nestedRoles": ["Dotsa.Role.Analyst"]
+}
