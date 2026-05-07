@@ -1,7 +1,17 @@
 entity type DotSafetyLoader {
-  loadFars:       function(year: int, dataPath: string): native py
-  loadPopulation: function(csvPath: string): native py
-  loadVmt:        function(csvPath: string): native py
-  loadSvi:        function(csvPath: string): native py
-  loadAll:        function(dataRoot: string): native py
+  loadFars:           function(year: int, dataPath: string): native py
+  loadFarsVehicles:   function(year: int, dataPath: string): native py
+  loadPopulation:     function(csvPath: string): native py
+  loadVmt:            function(csvPath: string): native py
+  loadSvi:            function(csvPath: string): native py
+
+  // UC5 — NHTSA defect/ratings/SGO datasets
+  loadRatings:        function(csvPath: string): native py
+  loadInvestigations: function(txtPath: string): native py
+  loadSgo:            function(defectRoot: string): native py
+  loadRecalls:        function(rclDir: string): native py
+  loadTsbs:           function(tsbDir: string): native py
+  loadComplaints:     function(txtPath: string): native py
+
+  loadAll:            function(dataRoot: string): native py
 }

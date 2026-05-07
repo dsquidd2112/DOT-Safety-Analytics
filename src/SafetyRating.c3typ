@@ -1,0 +1,28 @@
+/*
+ * NHTSA NCAP / SaferCar vehicle safety rating.
+ * id = "{make}-{model}-{modelYear}-{productionRelease}"
+ *
+ * Make and model are stored UPPERCASE to match Vehicle.vpicMake / vpicModel.
+ */
+entity type SafetyRating {
+  make:               !string
+  model:              !string
+  modelYear:          !int
+  productionRelease:  int
+
+  bodyStyle:          string
+  vehicleType:        string
+  vehicleClass:       string
+
+  overallStars:       int
+  frntDrivStars:      int
+  frntPassStars:      int
+  sideDrivStars:      int
+  sidePassStars:      int
+  rolloverStars:      int
+
+  nhtsaFcw:           string  // forward collision warning evaluation
+  nhtsaLdw:           string  // lane departure warning evaluation
+  nhtsaCib:           string  // crash imminent braking evaluation
+  nhtsaDbs:           string  // dynamic brake support evaluation
+}

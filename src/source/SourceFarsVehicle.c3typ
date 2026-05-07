@@ -1,0 +1,15 @@
+type SourceFarsVehicle mixes Source {
+  @ser(name="STATE")         stateFips:     string
+  @ser(name="ST_CASE")       stCase:        string
+  @ser(name="VEH_NO")        vehNo:         int
+  @ser(name="MOD_YEAR")      modelYear:     int
+  @ser(name="VPICMAKENAME")  vpicMake:      string
+  @ser(name="VPICMODELNAME") vpicModel:     string
+  @ser(name="VPICBODYCLASS") vpicBodyClass: string
+  @ser(name="MAKENAME")      farsMakeName:  string
+  @ser(name="MODEL")         farsModelCode: string
+  @ser(name="BODY_TYPNAME")  bodyType:      string
+  @ser(name="VIN")           vin:           string
+  @ser(name="NUMOCCS")       numOccupants:  int
+  @ser(name="TRAV_SP")       travelSpeed:   int
+}

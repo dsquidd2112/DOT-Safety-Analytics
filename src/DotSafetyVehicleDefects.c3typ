@@ -1,0 +1,16 @@
+/*
+ * UC5 — Vehicle Defect Surveillance service.
+ *
+ * Joins FARS Vehicle (with NHTSA-decoded vPIC canonical MMMY fields) to
+ * NHTSA defect/ratings/SGO/Complaints datasets via uppercase Make/Model/
+ * Model Year exact match. No vPIC API calls required at runtime.
+ *
+ * Per UC5 design 12b, sgoSummary returns siloed automated-vehicle data
+ * separate from FARS fatal-crash analytics.
+ */
+entity type DotSafetyVehicleDefects {
+  topDefectVehicles:  function(stateFips: string, year: int, limit: int): native py
+  vehicleProfile:     function(make: string, model: string, modelYear: int): native py
+  searchComplaints:   function(query: string, make: string, model: string, modelYear: int, limit: int): native py
+  sgoSummary:         function(level: string): native py
+}

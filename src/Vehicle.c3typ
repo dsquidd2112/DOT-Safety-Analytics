@@ -1,0 +1,29 @@
+/*
+ * One vehicle record from NHTSA FARS (one row per crash-involved vehicle).
+ * id = "{ST_CASE}-{VEH_NO}-{year}"
+ *
+ * vpicMake / vpicModel are NHTSA's canonical vPIC-decoded values from the
+ * FARS VEHICLE.csv (VPICMAKENAME / VPICMODELNAME columns) and serve as the
+ * join key to NHTSA defect datasets (Recalls, Investigations, Complaints,
+ * TSBs, NCAP Ratings, SGO incidents). Stored uppercase to match NHTSA
+ * defect-side casing conventions.
+ */
+entity type Vehicle {
+  stCase:        !string
+  vehNo:         !int
+  year:          !int
+  stateFips:     !string
+
+  modelYear:     int     // FARS MOD_YEAR (null if 9999/unknown)
+  vpicMake:      string  // VPICMAKENAME — canonical join key, uppercase
+  vpicModel:     string  // VPICMODELNAME — canonical join key, uppercase
+  vpicBodyClass: string  // VPICBODYCLASS
+
+  farsMakeName:  string  // MAKENAME — FARS-internal fallback name
+  farsModelCode: string  // MODEL — FARS numeric model code
+
+  bodyType:      string  // BODY_TYPNAME
+  vin:           string  // VIN (often partial / redacted)
+  numOccupants:  int     // NUMOCCS
+  travelSpeed:   int     // TRAV_SP (mph; null if unknown)
+}

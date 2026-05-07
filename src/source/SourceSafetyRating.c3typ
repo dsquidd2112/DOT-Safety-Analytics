@@ -1,0 +1,19 @@
+type SourceSafetyRating mixes Source {
+  @ser(name="MAKE")                          make:              string
+  @ser(name="MODEL")                         model:             string
+  @ser(name="MODEL_YR")                      modelYear:         int
+  @ser(name="BODY_STYLE")                    bodyStyle:         string
+  @ser(name="VEHICLE_TYPE")                  vehicleType:       string
+  @ser(name="VEHICLE_CLASS")                 vehicleClass:      string
+  @ser(name="PRODUCTION_RELEASE")            productionRelease: int
+  @ser(name="OVERALL_STARS")                 overallStars:      int
+  @ser(name="FRNT_DRIV_STARS")               frntDrivStars:     int
+  @ser(name="FRNT_PASS_STARS")               frntPassStars:     int
+  @ser(name="SIDE_DRIV_STARS")               sideDrivStars:     int
+  @ser(name="SIDE_PASS_STARS")               sidePassStars:     int
+  @ser(name="ROLLOVER_STARS")                rolloverStars:     int
+  @ser(name="NHTSA_FRNT_COLLISION_WARNING")  nhtsaFcw:          string
+  @ser(name="NHTSA_LANE_DEPARTURE_WARNING")  nhtsaLdw:          string
+  @ser(name="NHTSA_CRASH_IMMINENT_BRAKE")    nhtsaCib:          string
+  @ser(name="NHTSA_DYNAMIC_BRAKE_SUPPORT")   nhtsaDbs:          string
+}

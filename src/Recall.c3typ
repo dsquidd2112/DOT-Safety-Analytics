@@ -1,0 +1,17 @@
+/*
+ * NHTSA Office of Defects Investigation safety recall campaign.
+ * id = "{nhtsaId}-{make}-{model}-{modelYear}"
+ *
+ * Make/model uppercase to match Vehicle.vpicMake / vpicModel join key.
+ * Source: RCL_FROM_YYYY_YYYY.zip on static.nhtsa.gov.
+ */
+entity type Recall {
+  nhtsaId:        !string
+  make:           !string
+  model:          !string
+  modelYear:      int          // null if 9999/unknown
+
+  documentName:   string       // linked Part 573 PDF reference
+  pdfUrl:         string       // computed: https://static.nhtsa.gov/odi/rcl/{year}/{documentName}
+  summary:        string       // defect / consequence / corrective summary
+}

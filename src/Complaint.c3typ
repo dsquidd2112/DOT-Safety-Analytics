@@ -1,0 +1,30 @@
+/*
+ * NHTSA consumer complaint record. Source: FLAT_CMPL.txt (1995–present).
+ *
+ * id = cmplid (NHTSA's unique sequence number; one row per complaint).
+ * Make/model uppercase; narrative truncated to 1500 characters at load time.
+ *
+ * Per UC5 design, narrative free-text search uses an external full-text
+ * index in the production C3 deployment (vector or platform-native FTS),
+ * not modeled on this entity directly.
+ */
+entity type Complaint {
+  cmplid:        !string
+  odino:         string
+  mfrName:       string
+  make:          !string
+  model:         !string
+  modelYear:     int          // null if 9999
+
+  compDesc:      string       // specific component description
+  crash:         boolean
+  fire:          boolean
+  injured:       int
+  deaths:        int
+  failDate:      string       // YYYYMMDD
+  recvDate:      string       // YYYYMMDD
+  city:          string
+  state:         string       // 2-letter
+
+  narrative:     string       // truncated to 1500 chars
+}

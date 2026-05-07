@@ -1,0 +1,21 @@
+/*
+ * NHTSA Office of Defects Investigation (ODI) safety-related defect
+ * investigation. Source: FLAT_INV.txt (1972–present).
+ *
+ * One row per investigation × MMMY × component. Make and model uppercase.
+ * id = "{nhtsaActionNumber}-{make}-{model}-{modelYear}-{compName}"
+ */
+entity type Investigation {
+  nhtsaActionNumber:  !string
+  make:               !string
+  model:              !string
+  modelYear:          int          // null if 9999/unknown
+  compName:           !string
+
+  mfrName:            string
+  openDate:           string       // YYYYMMDD
+  closeDate:          string       // YYYYMMDD (blank = open)
+  campNo:             string       // recall campaign number, if investigation led to a recall
+  subject:            string
+  summary:            string
+}

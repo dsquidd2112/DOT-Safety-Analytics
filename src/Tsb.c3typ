@@ -1,0 +1,21 @@
+/*
+ * NHTSA Manufacturer Communication / Technical Service Bulletin (TSB).
+ * Source: TSBS_RECEIVED_YYYY-YYYY.zip TSV flat file on static.nhtsa.gov.
+ *
+ * Loaded with one row per (nhtsaId, make, model, modelYear) — components
+ * are aggregated into a comma-joined string. Make/model uppercase.
+ *
+ * id = "{nhtsaId}-{make}-{model}-{modelYear}"
+ */
+entity type Tsb {
+  nhtsaId:        !int         // NHTSA ID Number
+  make:           !string
+  model:          !string
+  modelYear:      int          // null if 9999
+
+  commDate:       string       // YYYYMMDD
+  tsbDocId:       string       // manufacturer-supplied document identifier
+  commType:       string       // 'Service Bulletin', 'Service Campaign', etc.
+  components:     string       // comma-joined NHTSA component list
+  summary:        string       // ~500 char concise summary
+}

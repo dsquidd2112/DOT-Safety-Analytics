@@ -1,0 +1,33 @@
+/*
+ * NHTSA Standing General Order 2021-01 incident report.
+ *
+ * Per the UC5 design (12b), SGO data is INTENTIONALLY siloed from FARS
+ * fatal-crash analytics — SGO covers non-fatal automated/assisted-driving
+ * incidents reported by manufacturers, distinct from FARS' fatal-only
+ * scope. This entity does NOT carry a back-reference to FatalCrash.
+ *
+ * id = "{reportId}-v{reportVersion}-{automationLevel}"
+ */
+entity type SgoIncident {
+  reportId:          !string
+  reportVersion:     !int
+  automationLevel:   !string  // 'ADS' | 'ADAS' | 'OTHER'
+
+  reportingEntity:   string
+  reportSubmission:  string   // e.g. 'MAR-2026'
+
+  make:              string   // uppercase
+  model:             string   // uppercase
+  modelYear:         int      // null if 9999/unknown
+
+  driverOperator:    string
+  featureVersion:    string
+  engagedStatus:     string
+
+  incidentDate:      string
+  incidentTime:      string
+  state:             string   // 2-letter
+  roadwayType:       string
+  crashWith:         string
+  narrative:         string
+}
